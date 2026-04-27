@@ -36,7 +36,7 @@ No entanto, as fontes detalham extensivamente quais ferramentas são ideais para
 As fontes explicam que o uso de métodos computacionais tradicionais é inviável para o **Big Data** — que pode envolver bilhões ou trilhões de registros — por não serem escaláveis. Por isso, a Ciência de Dados utiliza algoritmos modernos capazes de vasculhar essas montanhas de dados com rapidez para extrair padrões e informações estratégicas.
 
 ## Prompt 3
-como fazer uma extração de dados de forma mais rápida e segura?
+como fazer uma extração de dados de forma mais rápida e segura?-resultado de acordo com as fontes, buscou também sobre ETL 
 
 Para realizar uma extração de dados de forma **rápida**, a melhor abordagem é utilizar a linguagem **Python** e bibliotecas especializadas como o **pandas**, que foi pensado especificamente para manipular grandes massas de dados de maneira prática e eficiente. Em vez de abrir arquivos um a um manualmente, o que é demorado e suscetível a erros, você deve criar **scripts automatizados** que fazem parte do processo de **ETL (Extrair, Transformar e Carregar)**. Para ganhar velocidade na leitura de múltiplos arquivos, a biblioteca **glob** é fundamental, pois permite localizar e carregar diversos arquivos dinamicamente através de expressões (como ler todos os `.xlsx` de uma pasta de uma vez), eliminando a necessidade de apontar cada caminho individualmente.
 
@@ -48,3 +48,5 @@ No que diz respeito à **segurança** e integridade do processo, você deve segu
 *   **Isolamento do Ambiente:** Crie sempre um **ambiente virtual (venv)** para o seu projeto, o que garante que as versões das bibliotecas sejam as mesmas para todos os desenvolvedores, evitando conflitos que possam comprometer a execução segura do código.
 
 Dessa forma, ao combinar o poder de processamento do núcleo do Python com boas práticas de organização de pastas (separando dados crus de dados tratados), você obtém uma extração escalável, performática e profissional.
+
+
