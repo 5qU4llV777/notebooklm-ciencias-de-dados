@@ -104,3 +104,194 @@ Para iniciar o trabalho localmente, o processo padrão envolve a instalação da
 
 As ferramentas mencionadas são, em sua maioria, de código aberto (Open Source) e gratuitas, permitindo que o analista de dados desenvolva desde scripts simples até sistemas complexos de inteligência artificial sem custos de licenciamento.
 
+## Glossário
+
+Dicionário de Conceitos: Python para Análise de Dados
+
+Bem-vindo ao ponto de partida da sua jornada na ciência de dados. Este guia foi meticulosamente estruturado para transformar jargões técnicos em conceitos amigáveis, permitindo que você domine a base da linguagem Python com confiança e clareza pedagógica.
+
+
+--------------------------------------------------------------------------------
+
+
+1. Introdução ao Universo Python
+
+O Python é uma linguagem de alto nível, o que significa que sua sintaxe é muito próxima da linguagem humana (especificamente o inglês), facilitando a leitura e a escrita. Desenvolvida originalmente por Guido Van Rossum em 1989, a linguagem evoluiu para se tornar a ferramenta definitiva para quem trabalha com dados. Atualmente, focamos na versão 3.7.9, garantindo modernidade e evitando os problemas de compatibilidade encontrados no antigo Python 2.
+
+Por que escolher Python para Dados?
+
+* Filosofia "Batteries Included": Python já vem com o "estoque de pilhas" pronto. Isso significa que o núcleo da linguagem possui funcionalidades nativas robustas, exigindo menos esforço para começar projetos complexos em comparação a linguagens como C ou Java.
+* Simplicidade e Produtividade: A sintaxe enxuta permite realizar tarefas grandiosas com poucas linhas de código ("fazer mais com menos").
+* Ecossistema Poderoso: Possui bibliotecas especializadas (como Numpy e ferramentas de Machine Learning) capazes de processar volumes massivos de informação.
+
+O Zen do Python: A Filosofia por trás do Código
+
+A linguagem segue princípios de design que priorizam a elegância e a clareza. Para um analista iniciante, três pilares são fundamentais:
+
+1. Simples é melhor que complexo: Evite complicações desnecessárias na lógica.
+2. O que conta é a legibilidade: O código deve ser fácil de ler para você e para sua equipe.
+3. Agora é melhor que nunca: A prática e a implementação imediata superam a teoria estagnada.
+
+Agora que compreendemos o propósito da linguagem, precisamos preparar o terreno para que o seu computador entenda as instruções que você irá escrever.
+
+
+--------------------------------------------------------------------------------
+
+
+2. O Ecossistema de Trabalho (Ambiente e Ferramentas)
+
+Configurar o ambiente correto é o passo essencial para garantir que seu motor de análise funcione sem falhas.
+
+Glossário de Ferramentas
+
+Ferramenta	O que é	Por que usar?
+Python (Núcleo)	O interpretador e as estruturas nativas.	É o "motor" que processa as instruções da linguagem.
+Jupyter Notebook	Um "caderno" interativo.	Permite a execução de células isoladas e visualização de resultados em tempo real.
+Anaconda	Uma plataforma/suite completa.	Centraliza ferramentas de Ciência de Dados e Machine Learning em um só lugar.
+PIP	Gerenciador de pacotes.	O assistente que baixa e instala complementos e bibliotecas externas.
+
+⚠️ AVISO DE INSTALAÇÃO: A Variável PATH Durante a instalação do Python, você deve marcar a opção "Add Python to PATH". Isso adiciona o endereço do interpretador às variáveis de sistema do Windows, permitindo que o computador "encontre" o Python de qualquer lugar através do terminal (CMD). Sem isso, o sistema não reconhecerá o comando python.
+
+Interpretador vs. IDE
+
+Enquanto o Console/Terminal é uma interface direta de texto para comandos rápidos, uma IDE (Ambiente de Desenvolvimento Integrado) como o Jupyter Notebook oferece uma interface visual. O grande trunfo do Jupyter para a ciência de dados é a execução modular: você pode testar um pequeno trecho de código, ver o gráfico ou a tabela gerada, e só então prosseguir para o próximo passo.
+
+Com o ambiente devidamente configurado e o "PATH" definido, é hora de mergulharmos na gramática que dá vida à lógica de programação.
+
+
+--------------------------------------------------------------------------------
+
+
+3. As Regras de Ouro: Sintaxe e Lógica
+
+A programação exige precisão. Como o computador não possui capacidade de abstração, nossas instruções devem ser literais e ordenadas.
+
+O Algoritmo e a Analogia da Receita
+
+Um algoritmo é uma sequência lógica de passos. Imagine a receita de um bolo dividida em três atos:
+
+* Entrada (Input): Os ingredientes necessários (ovos, farinha, açúcar).
+* Processamento: O ato de misturar e assar em uma ordem específica.
+* Saída (Output): O bolo pronto (o resultado esperado da sua análise).
+
+Pilares da Sintaxe Python
+
+* Indentação (Recuo): No Python, o espaçamento no início da linha não é estético, é hierárquico. Ele define o que são "blocos filhos". Se a indentação estiver errada, o sistema gerará um IndentationError.
+* Case Sensitivity: O Python é sensível a maiúsculas. O comando print() funciona, mas tentar usar Print() resultará em um SyntaxError.
+* Análise Léxica: O interpretador lê o código sempre de cima para baixo e da esquerda para a direita.
+
+Palavras Reservadas
+
+Existem 31 palavras (como if, while, import, def, class) que são exclusivas do sistema. Como o Python é uma linguagem de alto nível, esses termos são em inglês para facilitar a memorização humana. Dica: Você nunca deve usar essas palavras para dar nomes às suas variáveis.
+
+Dominar a sintaxe é o que garante que o computador consiga distinguir a natureza das informações que estamos processando.
+
+
+--------------------------------------------------------------------------------
+
+
+4. Dicionário de Tipos de Dados (Data Types)
+
+Na ciência de dados, classificar a informação é o que permite realizar cálculos precisos ou manipulações de texto.
+
+Categorização de Dados
+
+Tipo	Nome Técnico	Descrição Simples	Exemplo Prático
+Inteiro	int	Números reais sem casas decimais.	12
+Decimal	float	Números de ponto flutuante (com ponto).	15.3
+Texto	str	Caracteres entre aspas.	'Ana' ou "Dados"
+Booleano	bool	Valores binários (Verdadeiro ou Falso).	True ou False
+Lista	list	Conjunto ordenado e mutável.	[1, 2, 'Pedro']
+Dicionário	dict	Conjunto de pares "chave" e "valor".	{'id': 101}
+Tupla	tuple	Conjunto ordenado e imutável.	('A', 'B')
+
+Diferenciação Crítica: O Risco da Lógica
+
+Um erro comum de iniciante é confundir o número 8 (int) com o caractere '8' (str). Observe o impacto:
+
+* Matemática: 5 + 2 resulta em 7.
+* Concatenação (Texto): '5' + '2' resulta em '52'. O interpretador não soma textos; ele os "cola" (concatena). Se você usar o tipo errado, sua análise de dados será comprometida por um erro de lógica, mesmo que a sintaxe pareça correta.
+
+Para manipular esses dados com eficiência, precisamos de etiquetas que nos ajudem a organizá-los na memória do computador.
+
+
+--------------------------------------------------------------------------------
+
+
+5. Variáveis e Objetos: Armazenando Conhecimento
+
+Conceito de Variável
+
+Imagine uma gaveta de escrivaninha. Uma variável é essa gaveta onde você guarda uma informação, coloca uma etiqueta (nome) na frente e pode abri-la para usar o conteúdo sempre que precisar. Em Python, as variáveis são tratadas como objetos, o que as torna dinâmicas e poderosas.
+
+Guia de Boas Práticas (Naming)
+
+Para que seu código seja "grokkable" (fácil de entender de relance), siga estas regras:
+
+1. Use snake_case: Letras minúsculas separadas por sublinhado (ex: salario_mensal).
+2. O que é PROIBIDO: Iniciar nomes com números ou usar espaços vazios (causa SyntaxError).
+3. Não Recomendado: Usar acentos, cedilhas ou nomes genéricos como x ou a.
+
+💡 PRO-TIP: O Python possui Tipagem Dinâmica. Isso significa que você não precisa dizer ao computador que a gaveta é para números; ao colocar idade = 31, o Python "deduz" automaticamente que o tipo é int. Se depois você colocar idade = "trinta", ele mudará o tipo para str instantaneamente.
+
+Variáveis são o depósito do seu conhecimento, mas elas só ganham vida quando interagimos com o usuário através de funções.
+
+
+--------------------------------------------------------------------------------
+
+
+6. Interação Básica: Entrada e Saída (Input/Output)
+
+Funções de Comunicação
+
+* print(): Exibe resultados no console. Tudo o que você deseja mostrar deve estar entre parênteses.
+* input(): Abre um canal para a interação humana. O programa pausa e espera que o usuário digite algo. Lembre-se: Todo dado vindo de um input() é lido inicialmente como texto (string).
+
+Exemplo Prático Sintetizado
+
+# Capturando a entrada, processando e exibindo a saída
+nome_usuario = input('Qual o seu nome? ')
+print('Seja bem-vindo ao curso de Python,', nome_usuario)
+
+
+À medida que sua lógica se torna mais complexa, a organização do código passa a ser tão importante quanto o próprio funcionamento.
+
+
+--------------------------------------------------------------------------------
+
+
+7. Organização e Comentários
+
+Comentar não é apenas explicar o que o código faz, mas por que ele faz. Isso é vital em projetos de análise de dados colaborativos para evitar a "engenharia reversa" constante.
+
+Sintaxe de Comentários
+
+# Comentário de Linha Única: O interpretador ignora tudo após a cerquilha.
+
+'''
+Comentário Multi-linha:
+Ideal para documentações longas ou para 
+explicar a origem de um conjunto de dados.
+'''
+
+
+Insight Final: Comentários bem estruturados permitem que você "vire a chave" de um projeto hoje e consiga entendê-lo perfeitamente daqui a seis meses.
+
+
+--------------------------------------------------------------------------------
+
+
+8. Conclusão e Próximos Passos
+
+Checklist do Iniciante
+
+Antes de avançar para Machine Learning, certifique-se de dominar:
+
+* [ ] Lógica de Algoritmos: Entender o fluxo Entrada -> Processamento -> Saída.
+* [ ] Hierarquia: Dominar a indentação para evitar erros de bloco.
+* [ ] Tipos de Dados: Diferenciar str, int, float e saber quando usar list ou tuple.
+* [ ] Variáveis: Nomear seguindo o padrão snake_case.
+* [ ] Interação: Manipular entradas e saídas com input() e print().
+
+A jornada na Ciência de Dados exige prática constante e curiosidade autodidata. Não tenha medo de errar; cada erro é um mestre disfarçado. Como diz a metodologia do autor Feltrin: "A vida é curta demais para programar em outra linguagem senão Python."
+
