@@ -37,6 +37,7 @@ As fontes explicam que o uso de métodos computacionais tradicionais é inviáve
 
 ## Prompt 3
 como fazer uma extração de dados de forma mais rápida e segura?
+
 Para realizar uma extração de dados de forma **rápida**, a melhor abordagem é utilizar a linguagem **Python** e bibliotecas especializadas como o **pandas**, que foi pensado especificamente para manipular grandes massas de dados de maneira prática e eficiente. Em vez de abrir arquivos um a um manualmente, o que é demorado e suscetível a erros, você deve criar **scripts automatizados** que fazem parte do processo de **ETL (Extrair, Transformar e Carregar)**. Para ganhar velocidade na leitura de múltiplos arquivos, a biblioteca **glob** é fundamental, pois permite localizar e carregar diversos arquivos dinamicamente através de expressões (como ler todos os `.xlsx` de uma pasta de uma vez), eliminando a necessidade de apontar cada caminho individualmente.
 
 No que diz respeito à **segurança** e integridade do processo, você deve seguir estas diretrizes:
