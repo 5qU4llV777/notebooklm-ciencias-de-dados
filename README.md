@@ -295,3 +295,26 @@ Antes de avançar para Machine Learning, certifique-se de dominar:
 
 A jornada na Ciência de Dados exige prática constante e curiosidade autodidata. Não tenha medo de errar; cada erro é um mestre disfarçado. Como diz a metodologia do autor Feltrin: "A vida é curta demais para programar em outra linguagem senão Python."
 
+## Conjunto de Prompts
+
+1. Fundamentos e Ecossistema de Ferramentas
+"Explique a importância do núcleo da linguagem Python para a Ciência de Dados e como bibliotecas como pandas e NumPy transformam o processamento de grandes volumes de dados, mencionando as estruturas de Series e DataFrame."
+"Quais são as principais diferenças entre o uso de CPython e PyPy, e em quais situações a implementação do PyPy pode oferecer maior performance para execução de algoritmos?"
+"Descreva o papel das bibliotecas de alto nível scikit-learn, TensorFlow e Keras no desenvolvimento de modelos de Machine Learning e Redes Neurais Profundas."
+2. O Processo de ETL e Data Wrangling
+"O que compõe as etapas de ETL (Extrair, Transformar e Carregar) e por que a fase de pré-processamento de dados (Data Wrangling) costuma consumir cerca de 80% do tempo de um projeto de Ciência de Dados?"
+"Como a biblioteca glob e a função read_excel ou read_csv do pandas facilitam a extração automatizada e dinâmica de múltiplos arquivos em um diretório?"
+"Explique a importância de manter a rastreabilidade e confiabilidade dos dados durante a transformação, sugerindo uma técnica para identificar a origem dos registros após a consolidação de diferentes fontes."
+3. Configuração de Ambiente e Boas Práticas
+"Por que é fundamental utilizar ambientes virtuais (venv ou conda) no início de cada projeto e como essa prática evita conflitos de dependências entre diferentes aplicações?"
+"Descreva a estrutura recomendada de pastas para um projeto profissional (ex: src, data/raw, data/ready) e explique a função do arquivo .gitignore na proteção de dados sensíveis."
+"Como o gerenciador de pacotes PIP atua na instalação de bibliotecas externas e qual a utilidade do comando pip freeze para a reprodutibilidade do projeto?"
+4. Lógica de Programação e Análise Léxica
+"Como a leitura sequencial feita pelo interpretador Python (análise léxica) influencia a atualização de variáveis e a precedência de comandos dentro de um código?"
+"Explique o conceito de indentação em Python e como o interpretador a utiliza para definir a hierarquia entre blocos de código e funções, diferenciando-a de linguagens que utilizam pontuação."
+"Discuta a diferença entre erros de sintaxe e erros de lógica, e como o uso de blocos try...except pode evitar a interrupção abrupta de um script durante o processamento de grandes massas de dados."
+5. Técnicas Avançadas de Tratamento de Dados
+"O que são outliers e quais funções do pandas podem ser utilizadas para detectar e remover registros inconsistentes ou valores nulos (NaN) em um banco de dados bruto?"
+"Explique como a normalização de dados e a técnica de OneHotEncoding preparam variáveis categóricas para serem interpretadas por algoritmos de aprendizado de máquina."
+"Como o uso de geradores (yield) e do protocolo de buffer (memoryview) pode otimizar drasticamente a alocação de memória ao lidar com volumes massivos de dados (Big Data)?"
+
